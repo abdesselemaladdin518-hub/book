@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>الباب... كان مفتوحًا دائمًا | عبد السلام علاء الدين</title>
+<title>الباب... كان مفتوحًا دائمًا</title>
 
 <style>
 
@@ -18,231 +18,110 @@ scroll-behavior:smooth;
 }
 
 body{
-
-background:#0b0b0b;
-
 font-family:Tahoma,Arial,sans-serif;
-
+background:#0b0b0b;
 color:white;
-
-line-height:1.9;
-
+line-height:1.8;
 }
 
-a{
-
-text-decoration:none;
-
-}
-
-.hero{
-
+header{
 min-height:100vh;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 padding:40px 20px;
-
 }
 
 .container{
-
 max-width:1100px;
-
-width:100%;
-
 display:flex;
-
 flex-wrap:wrap;
-
 align-items:center;
-
 justify-content:space-between;
-
 gap:50px;
-
 }
 
 .book{
-
 flex:1;
-
 text-align:center;
-
 }
 
 .book img{
-
 width:320px;
-
 max-width:90%;
-
 border-radius:18px;
-
-box-shadow:0 20px 60px rgba(0,0,0,.6);
-
-transition:.4s;
-
-}
-
-.book img:hover{
-
-transform:scale(1.03);
-
+box-shadow:0 20px 50px rgba(0,0,0,.6);
 }
 
 .content{
-
 flex:1;
-
-}
-
-.badge{
-
-display:inline-block;
-
-background:#d4af37;
-
-color:#000;
-
-padding:8px 18px;
-
-border-radius:30px;
-
-font-weight:bold;
-
-margin-bottom:20px;
-
 }
 
 h1{
-
 font-size:48px;
-
 color:#d4af37;
-
 margin-bottom:20px;
-
-line-height:1.3;
-
 }
 
-.subtitle{
-
+.lead{
 font-size:22px;
-
 color:#ddd;
-
-margin-bottom:25px;
-
-}
-
-.description{
-
-font-size:19px;
-
-color:#bbb;
-
 margin-bottom:35px;
-
-}
-
-.buttons{
-
-display:flex;
-
-gap:15px;
-
-flex-wrap:wrap;
-
 }
 
 .btn{
-
-padding:16px 30px;
-
-border-radius:10px;
-
-font-size:18px;
-
-font-weight:bold;
-
-transition:.3s;
-
-cursor:pointer;
-
 display:inline-block;
-
-}
-
-.gold{
-
+padding:16px 38px;
 background:#d4af37;
-
 color:black;
-
-}
-
-.gold:hover{
-
-transform:translateY(-3px);
-
-}
-
-.dark{
-
-border:2px solid #d4af37;
-
-color:#d4af37;
-
-}
-
-.dark:hover{
-
-background:#d4af37;
-
-color:black;
-
-}
-
-@media(max-width:900px){
-
-.container{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-h1{
-
-font-size:36px;
-
-}
-
-.subtitle{
-
 font-size:20px;
-
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
 }
 
-.description{
-
-font-size:18px;
-
+section{
+padding:90px 20px;
 }
 
-.buttons{
-
-justify-content:center;
-
+.wrapper{
+max-width:1000px;
+margin:auto;
 }
 
+h2{
+text-align:center;
+font-size:38px;
+color:#d4af37;
+margin-bottom:35px;
+}
+
+.about{
+font-size:21px;
+text-align:center;
+color:#ddd;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.card{
+background:#181818;
+padding:30px;
+border-radius:15px;
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.card p{
+color:#ccc;
 }
 
 </style>
@@ -251,7 +130,7 @@ justify-content:center;
 
 <body>
 
-<section class="hero">
+<header>
 
 <div class="container">
 
@@ -263,71 +142,35 @@ justify-content:center;
 
 <div class="content">
 
-<span class="badge">
-📖 إصدار جديد
-</span>
+<h1>الباب... كان مفتوحًا دائمًا</h1>
 
-<h1>
+<p class="lead">
 
-الباب... كان مفتوحًا دائمًا
-
-</h1>
-
-<p class="subtitle">
-
-رحلة لتغيير طريقة التفكير...
-وبداية جديدة للحياة.
+رحلة فكرية تساعدك على اكتشاف الفرص التي لم تكن تراها.
 
 </p>
 
-<p class="description">
-
-ليس كل باب مغلق يعني أن الطريق انتهى...
-أحيانًا تكون البداية أقرب مما تتخيل.
-
-</p>
-
-<div class="buttons">
-
-<a href="#about" class="btn gold">
+<a href="#about" class="btn">
 
 ابدأ القراءة
 
 </a>
 
-<a href="#author" class="btn dark">
-
-عن المؤلف
-
-</a>
-
 </div>
 
 </div>
 
-</div>
+</header>
 
-</section><!-- ========================= -->
-<!-- نبذة عن الكتاب -->
-<!-- ========================= -->
+<section id="about">
 
-<section id="about" style="padding:80px 20px;background:#111;">
+<div class="wrapper">
 
-<div style="max-width:1000px;margin:auto;">
+<h2>📖 نبذة عن الكتاب</h2>
 
-<h2 style="color:#d4af37;font-size:40px;text-align:center;margin-bottom:25px;">
+<p class="about">
 
-📖 نبذة عن الكتاب
-
-</h2>
-
-<p style="font-size:21px;color:#ddd;text-align:center;line-height:2;max-width:850px;margin:auto;">
-
-كتاب <strong>«الباب... كان مفتوحًا دائمًا»</strong> ليس مجرد كتاب في تطوير الذات،
-بل رحلة فكرية تساعدك على إعادة النظر في طريقة تفكيرك،
-والتعامل مع الأزمات، واكتشاف الفرص التي قد تكون أمامك دون أن تراها.
-
-كل فصل يحمل فكرة عملية وتأملًا عميقًا يمكن تطبيقه في الحياة اليومية.
+كتاب «الباب... كان مفتوحًا دائمًا» يدعوك إلى إعادة النظر في طريقة تفكيرك، وفهم التحديات بطريقة مختلفة، واكتشاف أن كثيرًا من الأبواب التي ظننتها مغلقة كانت تحتاج فقط إلى خطوة شجاعة.
 
 </p>
 
@@ -335,300 +178,85 @@ justify-content:center;
 
 </section>
 
-<!-- ========================= -->
-<!-- لماذا هذا الكتاب -->
-<!-- ========================= -->
+<section>
 
-<section style="padding:90px 20px;background:#0b0b0b;">
+<div class="wrapper">
 
-<h2 style="text-align:center;font-size:40px;color:#d4af37;margin-bottom:60px;">
+<h2>✨ لماذا تقرأ هذا الكتاب؟</h2>
 
-✨ لماذا تقرأ هذا الكتاب؟
+<div class="features">
 
-</h2>
+<div class="card">
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;max-width:1100px;margin:auto;">
+<h3>🧠 تطوير التفكير</h3>
 
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">🧠 تطوير التفكير</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-اكتشف طرقًا جديدة للنظر إلى التحديات وتحويلها إلى فرص.
-
-</p>
+<p>اكتشف طرقًا جديدة للنظر إلى الحياة.</p>
 
 </div>
 
-<div style="background:#181818;padding:30px;border-radius:18px;">
+<div class="card">
 
-<h3 style="color:#d4af37;">🚪 تجاوز الأزمات</h3>
+<h3>🚪 تجاوز الأزمات</h3>
 
-<p style="color:#ccc;margin-top:15px;">
-
-تعلّم كيف تواجه الصعوبات بثقة وهدوء.
-
-</p>
+<p>تعلم كيف تحول الصعوبات إلى فرص.</p>
 
 </div>
 
-<div style="background:#181818;padding:30px;border-radius:18px;">
+<div class="card">
 
-<h3 style="color:#d4af37;">💡 أفكار عملية</h3>
+<h3>💡 أفكار عملية</h3>
 
-<p style="color:#ccc;margin-top:15px;">
-
-محتوى سهل التطبيق يساعدك على اتخاذ قرارات أفضل.
-
-</p>
+<p>خطوات واضحة يمكنك تطبيقها يوميًا.</p>
 
 </div>
 
-<div style="background:#181818;padding:30px;border-radius:18px;">
+<div class="card">
 
-<h3 style="color:#d4af37;">📈 بداية جديدة</h3>
+<h3>📈 بداية جديدة</h3>
 
-<p style="color:#ccc;margin-top:15px;">
-
-ابدأ رحلة تغيير حقيقية خطوةً بخطوة.
-
-</p>
+<p>ابدأ رحلة تغيير حقيقية بثقة.</p>
 
 </div>
-
-</div>
-
-</section><!-- ========================= -->
-<!-- نبذة عن الكتاب -->
-<!-- ========================= -->
-
-<section id="about" style="padding:80px 20px;background:#111;">
-
-<div style="max-width:1000px;margin:auto;">
-
-<h2 style="color:#d4af37;font-size:40px;text-align:center;margin-bottom:25px;">
-
-📖 نبذة عن الكتاب
-
-</h2>
-
-<p style="font-size:21px;color:#ddd;text-align:center;line-height:2;max-width:850px;margin:auto;">
-
-كتاب <strong>«الباب... كان مفتوحًا دائمًا»</strong> ليس مجرد كتاب في تطوير الذات،
-بل رحلة فكرية تساعدك على إعادة النظر في طريقة تفكيرك،
-والتعامل مع الأزمات، واكتشاف الفرص التي قد تكون أمامك دون أن تراها.
-
-كل فصل يحمل فكرة عملية وتأملًا عميقًا يمكن تطبيقه في الحياة اليومية.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- لماذا هذا الكتاب -->
-<!-- ========================= -->
-
-<section style="padding:90px 20px;background:#0b0b0b;">
-
-<h2 style="text-align:center;font-size:40px;color:#d4af37;margin-bottom:60px;">
-
-✨ لماذا تقرأ هذا الكتاب؟
-
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;max-width:1100px;margin:auto;">
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">🧠 تطوير التفكير</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-اكتشف طرقًا جديدة للنظر إلى التحديات وتحويلها إلى فرص.
-
-</p>
-
-</div>
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">🚪 تجاوز الأزمات</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-تعلّم كيف تواجه الصعوبات بثقة وهدوء.
-
-</p>
-
-</div>
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">💡 أفكار عملية</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-محتوى سهل التطبيق يساعدك على اتخاذ قرارات أفضل.
-
-</p>
-
-</div>
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">📈 بداية جديدة</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-ابدأ رحلة تغيير حقيقية خطوةً بخطوة.
-
-</p>
 
 </div>
 
 </div>
 
 </section>
-<!-- ========================= -->
-<!-- نبذة عن الكتاب -->
-<!-- ========================= -->
+<section>
 
-<section id="about" style="padding:80px 20px;background:#111;">
+<div class="wrapper">
 
-<div style="max-width:1000px;margin:auto;">
+<h2>💬 اقتباسات من الكتاب</h2>
 
-<h2 style="color:#d4af37;font-size:40px;text-align:center;margin-bottom:25px;">
+<div class="features">
 
-📖 نبذة عن الكتاب
+<div class="card">
 
-</h2>
-
-<p style="font-size:21px;color:#ddd;text-align:center;line-height:2;max-width:850px;margin:auto;">
-
-كتاب <strong>«الباب... كان مفتوحًا دائمًا»</strong> ليس مجرد كتاب في تطوير الذات،
-بل رحلة فكرية تساعدك على إعادة النظر في طريقة تفكيرك،
-والتعامل مع الأزمات، واكتشاف الفرص التي قد تكون أمامك دون أن تراها.
-
-كل فصل يحمل فكرة عملية وتأملًا عميقًا يمكن تطبيقه في الحياة اليومية.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- لماذا هذا الكتاب -->
-<!-- ========================= -->
-
-<section style="padding:90px 20px;background:#0b0b0b;">
-
-<h2 style="text-align:center;font-size:40px;color:#d4af37;margin-bottom:60px;">
-
-✨ لماذا تقرأ هذا الكتاب؟
-
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;max-width:1100px;margin:auto;">
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">🧠 تطوير التفكير</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-اكتشف طرقًا جديدة للنظر إلى التحديات وتحويلها إلى فرص.
-
-</p>
-
-</div>
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">🚪 تجاوز الأزمات</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-تعلّم كيف تواجه الصعوبات بثقة وهدوء.
-
-</p>
-
-</div>
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">💡 أفكار عملية</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-محتوى سهل التطبيق يساعدك على اتخاذ قرارات أفضل.
-
-</p>
-
-</div>
-
-<div style="background:#181818;padding:30px;border-radius:18px;">
-
-<h3 style="color:#d4af37;">📈 بداية جديدة</h3>
-
-<p style="color:#ccc;margin-top:15px;">
-
-ابدأ رحلة تغيير حقيقية خطوةً بخطوة.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<!-- ========================= -->
-<!-- اقتباسات -->
-<!-- ========================= -->
-
-<section style="background:#111;padding:90px 20px;">
-
-<h2 style="text-align:center;color:#d4af37;font-size:40px;margin-bottom:50px;">
-
-💬 اقتباسات من الكتاب
-
-</h2>
-
-<div style="max-width:900px;margin:auto;display:grid;gap:30px;">
-
-<div style="background:#1a1a1a;padding:35px;border-left:5px solid #d4af37;border-radius:12px;">
-
-<p style="font-size:22px;color:#eee;line-height:2;">
-
+<p>
 "أحيانًا لا يكون الباب مغلقًا...
-بل نحن من نخشى دفعه."
-
+بل نحن من نتردد في دفعه."
 </p>
 
 </div>
 
-<div style="background:#1a1a1a;padding:35px;border-left:5px solid #d4af37;border-radius:12px;">
+<div class="card">
 
-<p style="font-size:22px;color:#eee;line-height:2;">
-
-"كل أزمة تحمل بداخلها فرصة...
+<p>
+"كل أزمة تحمل فرصة...
 لكنها لا تظهر إلا لمن يواصل السير."
-
 </p>
 
 </div>
 
-<div style="background:#1a1a1a;padding:35px;border-left:5px solid #d4af37;border-radius:12px;">
+<div class="card">
 
-<p style="font-size:22px;color:#eee;line-height:2;">
-
-"حين تغيّر طريقة تفكيرك...
-تبدأ حياتك بالتغيّر دون أن تشعر."
-
+<p>
+"حين يتغير تفكيرك...
+تبدأ حياتك بالتغير."
 </p>
+
+</div>
 
 </div>
 
@@ -636,66 +264,39 @@ justify-content:center;
 
 </section>
 
-<!-- ========================= -->
-<!-- عن المؤلف -->
-<!-- ========================= -->
+<section>
 
-<section id="author" style="padding:90px 20px;background:#0b0b0b;">
+<div class="wrapper">
 
-<div style="max-width:900px;margin:auto;text-align:center;">
+<h2>👤 عن المؤلف</h2>
 
-<h2 style="font-size:40px;color:#d4af37;margin-bottom:30px;">
-
-👤 عن المؤلف
-
-</h2>
-
-<h3 style="font-size:28px;color:white;margin-bottom:20px;">
+<p class="about">
 
 عبد السلام علاء الدين
 
-</h3>
-
-<p style="font-size:20px;color:#ccc;line-height:2;">
-
-كاتب مهتم بتطوير الذات وصناعة المحتوى الهادف، يسعى إلى تقديم أفكار تساعد القارئ على تجاوز الأزمات، وتطوير طريقة التفكير، وبناء حياة أكثر وعيًا وإيجابية.
+كاتب مهتم بتطوير الذات وصناعة المحتوى الهادف، ويسعى إلى تقديم أفكار تساعد القارئ على تطوير طريقة التفكير، ومواجهة التحديات، وبناء حياة أكثر وعيًا.
 
 </p>
 
 </div>
 
 </section>
-<!-- ========================= -->
-<!-- اطلب الكتاب -->
-<!-- ========================= -->
 
-<section style="padding:90px 20px;background:#111;text-align:center;">
+<section style="text-align:center;padding-bottom:100px;">
 
-<h2 style="font-size:40px;color:#d4af37;margin-bottom:20px;">
+<h2>📚 احصل على نسختك الآن</h2>
 
-📚 احصل على نسختك الآن
+<p class="about">
 
-</h2>
-
-<p style="font-size:20px;color:#ccc;max-width:700px;margin:auto;line-height:2;">
-
-إذا أعجبتك فكرة الكتاب وترغب في الحصول على نسختك،
-يمكنك التواصل معي مباشرة عبر WhatsApp.
+للطلب أو الاستفسار يمكنك التواصل مباشرة عبر واتساب.
 
 </p>
 
-<a href="https://wa.me/213654103997"
-target="_blank"
-style="display:inline-block;
-margin-top:40px;
-padding:18px 40px;
-background:#25D366;
-color:white;
-font-size:22px;
-font-weight:bold;
-border-radius:12px;
-text-decoration:none;
-transition:.3s;">
+<br><br>
+
+<a class="btn"
+href="https://wa.me/213654103997"
+target="_blank">
 
 🟢 اطلب عبر WhatsApp
 
@@ -703,17 +304,11 @@ transition:.3s;">
 
 </section>
 
-<footer style="background:#0b0b0b;padding:35px;text-align:center;color:#999;">
+<footer style="text-align:center;padding:40px;background:#111;color:#999;">
 
 <p>
 
 © 2026 عبد السلام علاء الدين
-
-</p>
-
-<p style="margin-top:10px;">
-
-الباب... كان مفتوحًا دائمًا
 
 </p>
 
