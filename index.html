@@ -132,20 +132,44 @@ background:#181818;
 border:2px solid #d4af37;
 border-radius:15px;
 padding:30px;
-max-width:420px;
+max-width:480px;
 margin:0 auto 35px auto;
 }
 
+.price-options{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-bottom:10px;
+}
+
+.price-option{
+flex:1;
+min-width:160px;
+}
+
 .price-amount{
-font-size:42px;
+font-size:38px;
 color:#d4af37;
 font-weight:bold;
-margin-bottom:8px;
+margin-bottom:5px;
+}
+
+.price-label{
+font-size:15px;
+color:#999;
+margin-bottom:10px;
 }
 
 .price-note{
 font-size:16px;
 color:#aaa;
+}
+
+.price-divider{
+border-top:1px solid #333;
+margin:20px 0;
 }
 
 .payment-info{
@@ -318,13 +342,30 @@ margin:0 auto 30px auto;
 <h2>📚 احصل على نسختك الآن</h2>
 
 <div class="price-box">
+
+<div class="price-options">
+
+<div class="price-option">
 <div class="price-amount">4.99 USDT</div>
+<div class="price-label">للدفع بالعملة الرقمية</div>
+</div>
+
+<div class="price-option">
+<div class="price-amount">700 دج</div>
+<div class="price-label">عبر CCP / بريدي موب</div>
+</div>
+
+</div>
+
+<div class="price-divider"></div>
+
 <div class="price-note">النسخة الرقمية الكاملة (PDF)</div>
+
 </div>
 
 <p class="payment-info">
 
-الدفع عبر USDT، والتسليم فوري بعد التأكيد عبر واتساب.
+اختر وسيلة الدفع التي تناسبك (USDT أو CCP/BaridiMob)، والتسليم فوري بعد التأكيد عبر واتساب.
 اضغط الزر أدناه وسترسَل رسالة جاهزة تلقائيًا — فقط اضغط "إرسال".
 
 </p>
@@ -332,7 +373,7 @@ margin:0 auto 30px auto;
 <br>
 
 <a class="btn"
-href="https://wa.me/213654103997?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%83%D8%AA%D8%A7%D8%A8%20%22%D8%A7%D9%84%D8%A8%D8%A7%D8%A8...%20%D9%83%D8%A7%D9%86%20%D9%85%D9%81%D8%AA%D9%88%D8%AD%D9%8B%D8%A7%20%D8%AF%D8%A7%D8%A6%D9%85%D9%8B%D8%A7%22%20(4.99%20USDT)"
+href="https://wa.me/213654103997?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%83%D8%AA%D8%A7%D8%A8%20%22%D8%A7%D9%84%D8%A8%D8%A7%D8%A8...%20%D9%83%D8%A7%D9%86%20%D9%85%D9%81%D8%AA%D9%88%D8%AD%D9%8B%D8%A7%20%D8%AF%D8%A7%D8%A6%D9%85%D9%8B%D8%A7%22"
 target="_blank">
 
 🟢 اطلب الآن عبر WhatsApp
