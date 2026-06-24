@@ -1,11 +1,356 @@
-هذا يبسّط كل شيء بشكل كبير. لا حاجة لرفع أي صورة جديدة على الإطلاق — الصورة موجودة بالفعل تحت اسم `cover.jpg`. كل ما نحتاجه هو **تصحيح اسم الملف الذي يستدعيه الكود** ليعود لـ `cover.jpg` بدل `cover-full.jpg`.
+<html lang="ar" dir="rtl">
 
-## ما تغيّر
+<head>
 
-أعدت اسم الصورة في الكود إلى `cover.jpg` (الموجود فعليًا على GitHub منذ البداية) بدل `cover-full.jpg` (الذي كان يتطلب رفعًا غير ضروري).
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-## الخطوة المتبقية الوحيدة
+<title>الباب... كان مفتوحًا دائمًا</title>
 
-استبدل فقط محتوى `index.html` بالنسخة الجديدة المرفقة أعلاه (نفس الخطوات السابقة: افتح الملف على GitHub → اضغط القلم ✏️ → احذف القديم → الصق الجديد → Commit changes). **لا حاجة لرفع أي صورة** — `cover.jpg` ستُستخدم تلقائيًا كما هي.
+<style>
 
-بعد النشر، يجب أن تظهر صورة الكهف كاملة أولًا (كما هي)، ثم العنوان والوصف تحتها مباشرة. هل تريد المتابعة لهذه الخطوة الآن؟
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#0b0b0b;
+color:white;
+line-height:1.8;
+}
+
+header{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px 20px;
+}
+
+.container{
+max-width:700px;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:35px;
+}
+
+.book{
+width:100%;
+max-width:500px;
+margin:0 auto;
+}
+
+.book img{
+width:100%;
+max-width:420px;
+height:auto;
+display:block;
+margin:auto;
+border-radius:18px;
+box-shadow:0 20px 50px rgba(0,0,0,.6);
+object-fit:contain;
+}
+
+.content{
+width:100%;
+}
+
+h1{
+font-size:48px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.lead{
+font-size:22px;
+color:#ddd;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 38px;
+background:#d4af37;
+color:black;
+font-size:20px;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+}
+
+section{
+padding:90px 20px;
+}
+
+.wrapper{
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+font-size:38px;
+color:#d4af37;
+margin-bottom:35px;
+}
+
+.about{
+font-size:21px;
+text-align:center;
+color:#ddd;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.card{
+background:#181818;
+padding:30px;
+border-radius:15px;
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.card p{
+color:#ccc;
+}
+
+.price-box{
+background:#181818;
+border:2px solid #d4af37;
+border-radius:15px;
+padding:30px;
+max-width:420px;
+margin:0 auto 35px auto;
+}
+
+.price-amount{
+font-size:42px;
+color:#d4af37;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.price-note{
+font-size:16px;
+color:#aaa;
+}
+
+.payment-info{
+font-size:17px;
+color:#bbb;
+max-width:600px;
+margin:0 auto 30px auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="book">
+
+<img src="cover.jpg" alt="غلاف الكتاب">
+
+</div>
+
+<div class="content">
+
+<h1>الباب... كان مفتوحًا دائمًا</h1>
+
+<p class="lead">
+
+رحلة فكرية تساعدك على اكتشاف الفرص التي لم تكن تراها.
+
+</p>
+
+<a href="#about" class="btn">
+
+ابدأ القراءة
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="wrapper">
+
+<h2>📖 نبذة عن الكتاب</h2>
+
+<p class="about">
+
+كتاب «الباب... كان مفتوحًا دائمًا» يدعوك إلى إعادة النظر في طريقة تفكيرك، وفهم التحديات بطريقة مختلفة، واكتشاف أن كثيرًا من الأبواب التي ظننتها مغلقة كانت تحتاج فقط إلى خطوة شجاعة.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="wrapper">
+
+<h2>✨ لماذا تقرأ هذا الكتاب؟</h2>
+
+<div class="features">
+
+<div class="card">
+
+<h3>🧠 تطوير التفكير</h3>
+
+<p>اكتشف طرقًا جديدة للنظر إلى الحياة.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚪 تجاوز الأزمات</h3>
+
+<p>تعلم كيف تحول الصعوبات إلى فرص.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💡 أفكار عملية</h3>
+
+<p>خطوات واضحة يمكنك تطبيقها يوميًا.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📈 بداية جديدة</h3>
+
+<p>ابدأ رحلة تغيير حقيقية بثقة.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="wrapper">
+
+<h2>💬 اقتباسات من الكتاب</h2>
+
+<div class="features">
+
+<div class="card">
+
+<p>
+"أحيانًا لا يكون الباب مغلقًا...
+بل نحن من نتردد في دفعه."
+</p>
+
+</div>
+
+<div class="card">
+
+<p>
+"كل أزمة تحمل فرصة...
+لكنها لا تظهر إلا لمن يواصل السير."
+</p>
+
+</div>
+
+<div class="card">
+
+<p>
+"حين يتغير تفكيرك...
+تبدأ حياتك بالتغير."
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="wrapper">
+
+<h2>👤 عن المؤلف</h2>
+
+<p class="about">
+
+عبد السلام علاء الدين
+
+كاتب مهتم بتطوير الذات وصناعة المحتوى الهادف، ويسعى إلى تقديم أفكار تساعد القارئ على تطوير طريقة التفكير، ومواجهة التحديات، وبناء حياة أكثر وعيًا.
+
+</p>
+
+</div>
+
+</section>
+
+<section style="text-align:center;padding-bottom:100px;">
+
+<h2>📚 احصل على نسختك الآن</h2>
+
+<div class="price-box">
+<div class="price-amount">4.99 USDT</div>
+<div class="price-note">النسخة الرقمية الكاملة (PDF)</div>
+</div>
+
+<p class="payment-info">
+
+الدفع عبر USDT، والتسليم فوري بعد التأكيد عبر واتساب.
+اضغط الزر أدناه وسترسَل رسالة جاهزة تلقائيًا — فقط اضغط "إرسال".
+
+</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/213654103997?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%83%D8%AA%D8%A7%D8%A8%20%22%D8%A7%D9%84%D8%A8%D8%A7%D8%A8...%20%D9%83%D8%A7%D9%86%20%D9%85%D9%81%D8%AA%D9%88%D8%AD%D9%8B%D8%A7%20%D8%AF%D8%A7%D8%A6%D9%85%D9%8B%D8%A7%22%20(4.99%20USDT)"
+target="_blank">
+
+🟢 اطلب الآن عبر WhatsApp
+
+</a>
+
+</section>
+
+<footer style="text-align:center;padding:40px;background:#111;color:#999;">
+
+<p>
+
+© 2026 عبد السلام علاء الدين
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
